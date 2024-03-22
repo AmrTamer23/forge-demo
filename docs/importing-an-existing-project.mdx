@@ -23,7 +23,7 @@ Import an existing Electron project into Electron Forge.
 
 If you already have an Electron app and want to try out Electron Forge, you can either use Forge's `import` script or manually configure Forge yourself.
 
-These steps will get you set up with a basic build pipeline that can create [squirrel.windows.md](config/makers/squirrel.windows.md "mention") (Windows), [zip.md](config/makers/zip.md "mention") (macOS), and [deb.md](config/makers/deb.md "mention") (Linux) installers when running `electron-forge make`.
+These steps will get you set up with a basic build pipeline that can create [squirrel.windows.mdx](config/makers/squirrel.windows.mdx "mention") (Windows), [zip.mdx](config/makers/zip.mdx "mention") (macOS), and [deb.mdx](config/makers/deb.mdx "mention") (Linux) installers when running `electron-forge make`.
 
 ## Using the import script
 
@@ -71,7 +71,7 @@ To start using Forge, add a few command scripts to your package.json file:
 }
 ```
 
-Then, set up your Forge [configuration.md](config/configuration.md "mention") in the `config.forge` field in package.json.
+Then, set up your Forge [configuration.mdx](config/configuration.mdx "mention") in the `config.forge` field in package.json.
 
 ```json title="package.json"
 {
@@ -109,7 +109,7 @@ In the above object, we configure each Maker that we installed into the `makers`
 
 ### Adding Squirrel.Windows boilerplate
 
-When distributing a [squirrel.windows.md](config/makers/squirrel.windows.md "mention") app, we recommend installing [`electron-squirrel-startup`](https://github.com/mongodb-js/electron-squirrel-startup) as a runtime dependency to handle Squirrel events.
+When distributing a [squirrel.windows.mdx](config/makers/squirrel.windows.mdx "mention") app, we recommend installing [`electron-squirrel-startup`](https://github.com/mongodb-js/electron-squirrel-startup) as a runtime dependency to handle Squirrel events.
 
 ```bash
 cd my-app
@@ -124,7 +124,7 @@ if (require("electron-squirrel-startup")) app.quit();
 
 ### Optional: publishing your app
 
-You can also configure Forge to upload your release artifacts to a self-hosted release server such as [electron-release-server.md](config/publishers/electron-release-server.md "mention") or [nucleus.md](config/publishers/nucleus.md "mention"), or cloud storage providers such as [s3.md](config/publishers/s3.md "mention").
+You can also configure Forge to upload your release artifacts to a self-hosted release server such as [electron-release-server.mdx](config/publishers/electron-release-server.mdx "mention") or [nucleus.mdx](config/publishers/nucleus.mdx "mention"), or cloud storage providers such as [s3.mdx](config/publishers/s3.mdx "mention").
 
 For example, for the S3 Publisher:
 
